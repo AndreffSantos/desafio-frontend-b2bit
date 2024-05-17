@@ -1,46 +1,108 @@
-# Getting Started with Create React App
+# Desafio Frontend B2Bit
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Agradeço a oportunidade de participar do processo seletivo da B2Bit e espero que este projeto atenda às expectativas.
 
-## Available Scripts
+## Sumário
+- [Descrição](#descrição)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Funcionalidades](#funcionalidades)
+- [Instruções para Rodar a Aplicação](#instruções-para-rodar-a-aplicação)
+- [Estrutura de Pastas](#estrutura-de-pastas)
+- [Contato](#contato)
 
-In the project directory, you can run:
+## Descrição
+Este projeto foi desenvolvido para participar do processo seletivo de Desenvolvedor Front-end em na B2Bit. A aplicação implementa as funcionalidades descritas nos [Requisitos](https://doc.clickup.com/3020915/p/h/2w63k-48543/4fbf8b7f844323d) utilizando ReactJS e TypeScript.
 
-### `npm start`
+Este projeto é uma aplicação ReactJS que permite aos usuários se autenticar e visualizar seu perfil. A aplicação interage com uma API para realizar o login e obter informações do perfil do usuário.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tecnologias Utilizadas
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- ReactJS
+- TypeScript
+- React Router (para navegação)
+- Formik (para gerenciamento de formulários)
+- Axios (para requisições HTTP)
 
-### `npm test`
+## Funcionalidades
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Sign In Page**
+    - Permite ao usuário inserir suas credenciais e fazer login.
+    - Validação do formulário de login.
+    - Exibe mensagem de erro em caso de falha no login.
 
-### `npm run build`
+2. **Manter o Usuário Logado**
+    - Persistência do token de autenticação no LocalStorage para manter o usuário logado.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Feedback de Credenciais Incorretas**
+    - Exibe uma mensagem de erro quando as credenciais fornecidas estão incorretas.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **Home Page com Perfil do Usuário**
+    - Exibe as informações do perfil do usuário autenticado utilizando o token de acesso.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. **Logout**
+    - Permite ao usuário sair da aplicação, removendo o token de autenticação do LocalStorage e redirecionando para a página de login.
 
-### `npm run eject`
+## Instruções para Rodar a Aplicação
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Pré-requisitos
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node.js instalado
+- NPM
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Rodando a aplicação
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/AndreffSantos/desafio-frontend-b2bit.git
+   cd desafio-frontend-b2bit
+   ```
 
-## Learn More
+2. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Inicie a aplicação:**
+   ```bash
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Acesse a aplicação:**
+   Abra seu navegador e navegue para `http://localhost:3000`
+
+### Scripts Disponíveis
+
+- `start`: Inicia a aplicação em modo de desenvolvimento.
+- `build`: Compila a aplicação para produção.
+
+## Estrutura de Pastas
+
+```
+desafio-frontend-b2bit/
+│
+├── public/
+├── src/
+│   ├── assets/             # Imagens e outros ativos estáticos
+│   ├── components/         # Componentes reutilizáveis
+│   ├── interfaces/         # Arquivos para validação de tipos
+│   ├── pages/              # Páginas da aplicação
+│   ├── services/           # Configurações de Axios e chamadas à API
+│   ├── styles/             # Arquivos de estilização
+│   ├── App.tsx             # Componente principal da aplicação configuração de rotas
+│   ├── index.tsx           # Ponto de entrada da aplicação
+│   ├── react-app-env.d.ts
+│   ├── reportWebVitals.ts
+│   └── setupTests.ts
+├── package.json
+└── README.md
+```
+
+## Contato
+
+Caso tenha alguma dúvida ou sugestão, entre em contato:
+
+- **Nome:** André Santos
+- **Email:** andrefelipe_santos@outlook.com
+- **LinkedIn:** [linkedin](https://www.linkedin.com/in/andrefelipe-santos/)
+
+---
